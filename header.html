@@ -387,6 +387,39 @@
   margin: 0;
   padding: 0;
 }
+.desktop-nav__item a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.desktop-nav__item a:hover {
+  color: #000; /* text thoda dark ho jaye hover pe */
+}
+
+/* Hover background splash */
+.desktop-nav__item a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: url("uploads/blue-splash.png") no-repeat center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.desktop-nav__item a:hover::before {
+  opacity: 1;
+}
+
     </style>
     <!--=== End of Footer ===-->
 
