@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Dream Knots | We dream a dream over a cup of coffee!" />
+		<meta name="keyword" content="Dream Knots | We dream a dream over a cup of coffee!" />
+		<title>Dream Knots | We dream a dream over a cup of coffee!</title>
+
+		<!--===  FONTS ===-->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Lora:400,400i|Cormorant+Garamond:400,400i,700" rel="stylesheet" /> -->
+
+		<!--=== STYLES ===-->
+		<link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/vendors/slick.css" />
+		<link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<meta name="theme-color" content="#3d78a1" />
+	</head>
+
+	<body>
+		<!--=== Header ===-->
+		<header class="header header--v2">
+			<div class="desktop-nav desktop-nav--v2 d-none d-lg-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="d-lg-flex align-items-center">
+								<ul class="list-bare d-lg-flex justify-content-center desktop-nav__menu col-md-4">
+									<li class="desktop-nav__item desktop-nav__item--has-submenu"><a href="index.html">Home</a></li>
+									<li class="desktop-nav__item desktop-nav__item--has-submenu"><a href="about.html">About</a></li>
+									<li class="desktop-nav__item"><a href="services.html">Services</a></li>
+								</ul>
+								<div class="header-logo header-logo--v2">
+									<a href="index.html"><img src="assets/img/logo.svg" alt="Dream Knots Logo" /></a>
+								</div>
+								<ul class="list-bare d-lg-flex justify-content-center desktop-nav__menu align-items-center">
+									<li class="desktop-nav__item"><a href="our-journey.html">Our Journey</a></li>
+									<li class="desktop-nav__item"><a href="clients-and-media.html">Clients & Media</a></li>
+									<li class="desktop-nav__item active"><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container d-lg-none">
+				<div class="row align-items-center">
+					<div class="col-10 col-sm-11">
+						<div class="header-logo">
+							<a href="index.html"><img src="assets/img/logo.svg" alt="Dream Knots Logo" /></a>
+						</div>
+					</div>
+					<div class="col-2 col-sm-1 u-mt-1">
+						<a href="#" class="mobile-nav-trigger d-lg-none js-open-mobile-nav">
+							<div name="menu" class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z" /></svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<ul class="mobile-nav js-mobile-nav d-lg-none">
+				<li class="mobile-nav__item"><a href="index.html">Home</a></li>
+				<li class="mobile-nav__item"><a href="about.html">About</a></li>
+				<li class="mobile-nav__item"><a href="services.html">Services</a></li>
+				<li class="mobile-nav__item"><a href="our-journey.html">Our Journey</a></li>
+				<li class="mobile-nav__item"><a href="clients-and-media.html">Clients & Media</a></li>
+				<li class="mobile-nav__item"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</header>
+		<!--=== End of Header ===-->
+
+		<!--=== Hero ===-->
+		<section class="hero u-bg-p-top innerpage-hero" style="background-image: url('assets/img/contact/contact-hero.jpeg')">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="u-font-serif hero__page-title">Contact us</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--=== End of Hero ===-->
+
+		<!--=== Contact Form ===-->
+		<section class="u-mt-6 u-mb-8">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="text-block text-center" data-aos="fade-up">
+							<h3 class="text-block__title">
+								Contact us for more information or <br />
+								to share your wedding vision with us.
+							</h3>
+							<div class="text-block__content">
+								<p class="u-font-serif">We will reply as soon as possible.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row u-mt-3">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="contact-card">
+							<h4 class="form-confirmation u-font-serif js-form-confirmation">Thank you for contacting us!</h4>
+							<form method="POST" id="contactForm" class="form js-form" data-aos="fade-up">
+								<div class="form__row d-md-flex">
+									<div class="form__field">
+										<label>Name</label>
+										<input type="text" name="name" required />
+									</div>
+									<div class="form__field">
+										<label>E-mail</label>
+										<input type="email" name="email" required />
+									</div>
+								</div>
+								<div class="form__row d-md-flex">
+									<div class="form__field">
+										<label>Wedding Date</label>
+										<input type="date" name="wedding_date" required />
+									</div>
+									<div class="form__field">
+										<label>Location</label>
+										<input type="text" name="location" required />
+									</div>
+								</div>
+								<div class="form__row d-md-flex pr-4">
+									<div class="form__field">
+										<label>Contact Number</label>
+										<input type="text" name="number" required />
+									</div>
+								</div>
+								<div class="form__row d-md-flex">
+									<div class="form__field form__field--full">
+										<label>Message</label>
+										<textarea rows="4" name="message"></textarea>
+									</div>
+								</div>
+
+								<div class="form__row d-md-flex justify-content-center">
+									<div class="form__field">
+										<button type="submit" class="btn js-submit" name="submit">
+											<span>Submit</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--=== End of Contact Form ===-->
+
+		<!--=== Footer ===-->
+		<footer class="footer u-bg-with-flower u-mt-7 u-pb-4">
+			<img class="bg-flower bg-flower--right" src="assets/img/flower.svg" loading="lazy" />
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h6 class="u-mb-1 u-text-xs"><a href="https://www.instagram.com/dream_knots/" target="_blank">@dream_knots</a></h6>
+						<ul class="footer-instagram d-flex align-items-center" id="instafeed"></ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-widget">
+							<h4 class="footer-widget__title">Contact Us</h4>
+							<ul class="footer-widget__list">
+								<li><a href="mailto:info@dreamknots.in">info@dreamknots.in</a></li>
+								<li><a href="tel:09820440996">+91 98204 40996</a></li>
+								<li><a href="https://goo.gl/maps/k8Y81n8NYzdaufdA7" target="_blank">2016, Rustomjee Eaze Zone Mall, Sunder Nagar, Goregaon-Mulund Link Road, Goregaon West, Mumbai - 400062</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-widget">
+							<h4 class="footer-widget__title">Explore</h4>
+							<ul class="footer-widget__list">
+								<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-widget">
+							<h4 class="footer-widget__title">Follow Us</h4>
+							<ul class="footer-widget__list">
+								<li><a href="https://www.instagram.com/dream_knots/" target="_blank">Instagram</a></li>
+								<li><a href="https://www.facebook.com/dreamyknots/" target="_blank">Facebook</a></li>
+								<li><a href="https://www.wedmegood.com/profile/Dream-Knots-638062" target="_blank">Wedmegood</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 align-self-end">
+						<p class="u-mb-0">&copy; 2021 Dream Knots</p>
+						<p class="u-mb-0">All rights reserved</p>
+						<p class="u-mb-0">Developed By <a title="Shwez Studio: Premier Web & App Development Services" target="_blank" href="https://www.shwezstudio.in/?utm_source=websites&utm_medium=dreamknots.in&utm_campaign=clients&utm_id=clients&utm_term=from_clients">Shwez Studio</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--=== End of Footer ===-->
+
+		<!--===  SCRIPTS ===-->
+		<script src="assets/js/vendors/bundle-min.js"></script>
+		<script src="assets/js/vendors/jquery.validate.min.js"></script>
+		<script src="assets/js/script.js"></script>
+
+		<script>
+			function sendData(data) {
+				// JSON Object
+				fetch("mail_form/contact-us-airtable.php", {
+					method: "POST",
+					body: JSON.stringify(data),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				})
+					.then(function (response) {
+						if (response.ok) {
+							return response.json()
+						}
+						return Promise.reject(response)
+					})
+					.then(function (data) {
+						console.log(data)
+					})
+					.catch(function (error) {
+						console.warn("Something went wrong.", error)
+					})
+			}
+
+			$.fn.serializeObject = function () {
+				var o = {}
+				var a = this.serializeArray()
+				$.each(a, function () {
+					if (o[this.name]) {
+						if (!o[this.name].push) {
+							o[this.name] = [o[this.name]]
+						}
+						o[this.name].push(this.value || "")
+					} else {
+						o[this.name] = this.value || ""
+					}
+				})
+				return o
+			}
+
+			$("#contactForm").validate({
+				rules: {
+					name: {
+						required: true,
+					},
+					email: {
+						required: true,
+						email: true,
+					},
+					wedding_date: {
+						required: true,
+					},
+					location: {
+						required: true,
+					},
+					number: {
+						required: true,
+					},
+					message: {
+						required: true,
+					},
+				},
+				messages: {
+					name: "Please enter your Name",
+					email: "Please enter a valid Email Address",
+					wedding_date: "Please enter wedding date",
+					location: "Please enter localtion",
+					number: "Please enter number",
+					message: "Please enter message",
+				},
+				submitHandler: function (form, event) {
+					event.preventDefault()
+					const customerData = $(form).serializeObject()
+					$("#contactForm").hide()
+					$(".js-form-confirmation").show()
+					console.log(customerData)
+					sendData(customerData)
+				},
+			})
+		</script>
+	</body>
+</html>
