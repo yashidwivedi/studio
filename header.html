@@ -1,195 +1,358 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sachin Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #e3cacc;
-      color: #fff;
-      padding: 0px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-    h1 {
-      font-size: 60px;
-      font-family: 'Playfair Display', serif;
-      color: white;
-      margin: 0;
-      line-height: 1;
-    }
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="https://dreamknots.in/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dream Knots | We dream a dream over a cup of coffee!" />
+    <meta name="keyword" content="Dream Knots | We dream a dream over a cup of coffee!" />
+    <title>Dream Knots | We dream a dream over a cup of coffee!</title>
 
-    h1 span {
-      display: block;
-      font-family: 'Great Vibes', cursive;
-      font-size: 40px;
-      font-weight: normal;
-      margin-top: 5px;
-    }
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
-    nav ul li {
-      margin-left: 30px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      transition: 0.3s;
-    }
-    nav ul li a:hover {
-      color: #f4b400;
-    }
-    .hero {
-      background: url('uploads/banner.jpeg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .hero h2 {
-      font-size: 50px;
-      margin-bottom: 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #f4b400;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #d99a00;
-    }
-    section {
-      padding: 80px 50px;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    .services, .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
+    <!--===  FONTS ===-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Lora:400,400i|Cormorant+Garamond:400,400i,700" rel="stylesheet" /> -->
 
-   <header>
-   <h1>
-    SACHIN <br>
-    <span>Studios</span>
-  </h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!--=== STYLES ===-->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+    <link rel="stylesheet" href="assets/css/vendors/fancybox.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <meta name="theme-color" content="#3d78a1" />
+  </head>
+
+  <body>
+    <!--=== Header ===-->
+    <header class="header header--v2">
+      <div class="desktop-nav desktop-nav--v2 d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="d-lg-flex align-items-center">
+                <ul class="list-bare d-lg-flex justify-content-center desktop-nav__menu col-md-4">
+                  <li class="desktop-nav__item desktop-nav__item--has-submenu active"><a href="index.html">Home</a></li>
+                  <li class="desktop-nav__item desktop-nav__item--has-submenu"><a href="about.html">About</a></li>
+                  <li class="desktop-nav__item"><a href="services.html">Services</a></li>
+                </ul>
+                <div class="header-logo header-logo--v2">
+                  <a href="index.html"><img src="assets/img/logo.svg" alt="Dream Knots Logo" /></a>
+                </div>
+                <ul class="list-bare d-lg-flex justify-content-center desktop-nav__menu align-items-center">
+                  <li class="desktop-nav__item"><a href="our-journey.html">Our Journey</a></li>
+                  <li class="desktop-nav__item"><a href="clients-and-media.html">Clients & Media</a></li>
+                  <li class="desktop-nav__item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-lg-none">
+        <div class="row align-items-center">
+          <div class="col-10 col-sm-11">
+            <div class="header-logo">
+              <a href="index.html"><img src="assets/img/logo.svg" alt="Dream Knots Logo" /></a>
+            </div>
+          </div>
+          <div class="col-2 col-sm-1 u-mt-1">
+            <a href="#" class="mobile-nav-trigger d-lg-none js-open-mobile-nav">
+              <div name="menu" class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z" /></svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mobile-nav js-mobile-nav d-lg-none">
+        <li class="mobile-nav__item"><a href="index.html">Home</a></li>
+        <li class="mobile-nav__item"><a href="about.html">About</a></li>
+        <li class="mobile-nav__item"><a href="services.html">Services</a></li>
+        <li class="mobile-nav__item"><a href="our-journey.html">Our Journey</a></li>
+        <li class="mobile-nav__item"><a href="clients-and-media.html">Clients & Media</a></li>
+        <li class="mobile-nav__item"><a href="contact.html">Contact Us</a></li>
       </ul>
-    </nav>
-  </header> 
-  
+    </header>
+    <!--=== End of Header ===-->
 
-  <section class="hero">
-    <div>
-      <h2>Capturing Your Precious Moments</h2>
-      <p>Professional photography studio to tell your story.</p>
-      <a href="#contact" class="btn">Book Now</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a creative photo studio specializing in portraits, events, and commercial shoots. Our goal is to capture timeless memories with a modern touch.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Portrait Photography</h3>
-        <p>Elegant and professional portraits for individuals, families, and couples.</p>
+    <!--=== Hero ===-->
+    <section class="js-slider-hero hero-slider home-slider">
+      <div class="hero hero--slide u-bg-p-bottom js-slide" style="background: url('assets/img/home/slider/slider-img-1.jpg') no-repeat center; background-size: cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="u-font-serif hero__title">"The beauty of marriage is not always seen from the very beginning—but rather as love grows and develops over time." -Fawn Weaver</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Event Photography</h3>
-        <p>Capturing moments from weddings, birthdays, and corporate events.</p>
+      <div class="hero hero--slide js-slide u-bg-p-center" style="background: url('assets/img/home/slider/slider-img-2.jpg') no-repeat center; background-size: cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="u-font-serif hero__title">"The beauty of marriage is not always seen from the very beginning—but rather as love grows and develops over time." -Fawn Weaver</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Commercial Shoots</h3>
-        <p>High-quality photos for brands, products, and marketing campaigns.</p>
+      <div class="hero hero--slide js-slide u-bg-p-bottom" style="background: url('assets/img/home/slider/slider-img-3.jpg') no-repeat center; background-size: cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="u-font-serif hero__title">"The beauty of marriage is not always seen from the very beginning—but rather as love grows and develops over time." -Fawn Weaver</h2>
+            </div>
+          </div>
+        </div>
       </div>
-       <div class="card">
-        <h3>Wedding Photography</h3>
-        <p>High-quality photos for brands, products, and marketing campaigns.</p>
+      <div class="hero hero--slide js-slide u-bg-p-center" style="background: url('assets/img/home/slider/slider-img-4.jpg') no-repeat center; background-size: cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="u-font-serif hero__title">"The beauty of marriage is not always seen from the very beginning—but rather as love grows and develops over time." -Fawn Weaver</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="hero hero--slide js-slide u-bg-p-bottom" style="background: url('assets/img/home/slider/slider-img-5.jpg') no-repeat center; background-size: cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="u-font-serif hero__title">"The beauty of marriage is not always seen from the very beginning—but rather as love grows and develops over time." -Fawn Weaver</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="slider-arrow slider-arrow--hero slider-arrow--prev js-arrow-prev"
+        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+      ></span>
+      <span class="slider-arrow slider-arrow--hero slider-arrow--next js-arrow-next"
+        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+      ></span>
+    </section>
+    <!--=== End of Hero ===-->
 
+    <!--=== About Us ===-->
+    <section class="u-mt-6 u-mb-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-block text-center" data-aos="fade-up">
+              <p class="u-font-serif">Your imagination needs an artist & we are here for you to sketch your thoughts.</p>
+              <hr />
+              <div class="text-block__content">
+                <p class="u-mt-3">At Dream Knots, an aesthetic approach is the root of our planning and execution.</p>
+                <p>We believe in narrating the orchestration story of a wedding’s heritage and its traditions by our planning. Our planning is always customized and tailored to the perception you have for your dream wedding.</p>
+                <p>Here we believe flawless management is essential to ensure no detail is overlooked. For us a wedding is a combination of beauty and harmony.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row u-mt-4">
+          <div class="col-md-4">
+            <a href="services.html" class="img-link" data-aos="fade-up">
+              <div class="img-link__img img-link__img--lg">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/services.jpg')"></div>
+              </div>
+              <span class="btn img-link__btn">Services</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="vendors.html" class="img-link" data-aos="fade-up" data-aos-delay="100">
+              <div class="img-link__img img-link__img--lg">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/vendors.jpg')"></div>
+              </div>
+              <span class="btn img-link__btn">Vendors</span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="about.html" class="img-link" data-aos="fade-up" data-aos-delay="200">
+              <div class="img-link__img img-link__img--lg">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/team.jpg')"></div>
+              </div>
+              <span class="btn img-link__btn">Our Team</span>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!--=== End of About us ===-->
 
-  <section id="portfolio">
-    <h2>Our Work</h2>
-    <div class="portfolio">
-      <div class="card"><img src="uploads/955e1dd9b5058eb7c576a7b5311a11d0.jpg" alt=""></div>
-      <div class="card"><img src="uploads/955e1dd9b5058eb7c576a7b5311a11d0.jpg" alt=""></div>
-      <div class="card"><img src="uploads/955e1dd9b5058eb7c576a7b5311a11d0.jpg" alt=""></div>
-      <div class="card"><img src="uploads/955e1dd9b5058eb7c576a7b5311a11d0.jpg" alt=""></div>
-    </div>
-  </section>
+    <!--=== Latest work ===-->
+    <section class="u-mt-7 u-mb-7 home-meet-dream-knots">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-4">
+            <div class="text-block" data-aos="zoom-in-right">
+              <h3 class="text-block__title">Meet Dream Knots</h3>
+              <div class="text-block__content">
+                <p>Making your dreams our wish, tying a knot between you and us, marking the beginning of everything.</p>
+              </div>
+              <a href="about.html" class="text-block__btn btn u-mb-2">About us</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="home-img-slider mb-0" data-aos="fade-up">
+              <a href="assets/img/home/meet-dream-knots-1.jpg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-1-1.jpg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1-1.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-1-2.jpg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1-2.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-1-3.jpg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1-3.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-1-4.jpg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1-4.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-1-5.jpeg" class="img-link__img img-link__img--lg home-img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-center" style="background-image: url('assets/img/home/meet-dream-knots-1-5.jpeg')"></div>
+              </a>
+              <span class="slider-arrow slider-arrow--hero slider-arrow--prev js-arrow-prev"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+              ></span>
+              <span class="slider-arrow slider-arrow--hero slider-arrow--next js-arrow-next"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+              ></span>
+              <!-- <span class="img-link__link">Marissa & Ethan in Sicily</span> -->
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="img-slider" data-aos="fade-up">
+              <a href="assets/img/home/meet-dream-knots-2.jpg" class="img-link__img img-link__img--lg img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/meet-dream-knots-2.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-2-1.jpg" class="img-link__img img-link__img--lg img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/meet-dream-knots-2-1.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-2-2.jpg" class="img-link__img img-link__img--lg img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/meet-dream-knots-2-2.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-2-3.jpg" class="img-link__img img-link__img--lg img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/meet-dream-knots-2-3.jpg')"></div>
+              </a>
+              <a href="assets/img/home/meet-dream-knots-2-4.jpg" class="img-link__img img-link__img--lg img-slide mb-0" data-fancybox="preview" data-width="1500" data-height="1000">
+                <div class="bg-img u-bg-p-top" style="background-image: url('assets/img/home/meet-dream-knots-2-4.jpg')"></div>
+              </a>
+              <span class="slider-arrow slider-arrow--hero slider-arrow--prev js-arrow-prev"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+              ></span>
+              <span class="slider-arrow slider-arrow--hero slider-arrow--next js-arrow-next"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.175 477.175"><path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z" /></svg
+              ></span>
+              <!-- <span class="img-link__link">Chiara & Alessandro in Ravello</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=== End of Latest work ===-->
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@viewlightstudio.com | Phone: +91 9876543210</p>
-  </section>  
+    <!--=== Partners ===-->
+    <!-- <section class="u-bg-primary u-bg-with-flower u-mb-7 u-pt-5 u-pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center" data-aos="fade-up">
+            <h6 class="top-title">Our Partners</h6>
+            <ul class="logo-list d-flex u-pt-2 align-items-center justify-content-center flex-wrap">
+              <li>
+                <a href="#"><img src="assets/img/home/partner1.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/home/partner2.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/home/partner3.png" width="120" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/home/partner4.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/img/home/partner5.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--=== End of Partners ===-->
 
-  <footer>
-    <p>&copy; 2025 Sachin Studio. All Rights Reserved.</p>
-  </footer>
+    <!--=== Footer Call to Action ===-->
+    <section class="u-mt-7 u-mb-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="footer-cta" data-aos="fade-up">
+              <div class="top-title">Like our work?</div>
+              <!-- <h4 class="footer-cta__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4> -->
+              <div class="footer-cta__content">
+                <a href="contact.html" class="btn">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=== End of Footer Call to Action ===-->
 
-</body>
+    <!--=== Footer ===-->
+    <footer class="footer u-bg-with-flower u-mt-7 u-pb-4">
+      <img class="bg-flower bg-flower--right" src="assets/img/flower.svg" loading="lazy" />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h6 class="u-mb-1 u-text-xs"><a href="https://www.instagram.com/dream_knots/" target="_blank">@dream_knots</a></h6>
+            <ul class="footer-instagram d-flex align-items-center" id="instafeed"></ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-widget">
+              <h4 class="footer-widget__title">Contact Us</h4>
+              <ul class="footer-widget__list">
+                <li><a href="mailto:info@dreamknots.in">info@dreamknots.in</a></li>
+                <li><a href="tel:09820440996">+91 98204 40996</a></li>
+                <li><a href="https://goo.gl/maps/k8Y81n8NYzdaufdA7" target="_blank">2016, Rustomjee Eaze Zone Mall, Sunder Nagar, Goregaon-Mulund Link Road, Goregaon West, Mumbai - 400062</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-widget">
+              <h4 class="footer-widget__title">Explore</h4>
+              <ul class="footer-widget__list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-widget">
+              <h4 class="footer-widget__title">Follow Us</h4>
+              <ul class="footer-widget__list">
+                <li><a href="https://www.instagram.com/dream_knots/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/dreamyknots/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.wedmegood.com/profile/Dream-Knots-638062" target="_blank">Wedmegood</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 align-self-end">
+            <p class="u-mb-0">&copy; 2021 Dream Knots</p>
+            <p class="u-mb-0">All rights reserved</p>
+            <p class="u-mb-0">Developed By <a title="Shwez Studio: Premier Web & App Development Services" target="_blank" href="https://www.shwezstudio.in/?utm_source=websites&utm_medium=dreamknots.in&utm_campaign=clients&utm_id=clients&utm_term=from_clients">Shwez Studio</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=== End of Footer ===-->
+
+    <!--===  SCRIPTS ===-->
+    <script src="assets/js/vendors/bundle-min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
