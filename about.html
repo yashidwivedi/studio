@@ -274,7 +274,76 @@
 			</div>
 		</footer>
 		<!--=== End of Footer ===-->
+ <style>
+      .desktop-nav__menu li a {
 
+  padding: 5px 10px; /* upar niche aur side ka gap kam ho jayega */
+  margin: 0 5px;     /* menu items ke beech ka gap kam */
+}
+
+/* Logo ko bhi adjust karna ho to */
+.header-logo img {
+  max-height: 100px;  /* logo ki height chhoti */
+  width: 100px;
+  margin: 0px 0 0 62px;
+}
+
+/* Overall header ki padding kam karne ke liye */
+.header {
+  padding: 5px 0;  
+   background-color: #E3CACC;
+}
+/* Extra space hatane ke liye */
+.header {
+  margin: 0;
+  padding: 0;
+  background: #add8e6; /* light blue background */
+}
+
+/* Container aur row ki spacing reset */
+.header .container,
+.header .row {
+  margin: 0;
+  padding: 0;
+}
+
+/* Desktop nav ke andar gap kam */
+.desktop-nav {
+  margin: 0;
+  padding: 0;
+}
+.desktop-nav__item a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.desktop-nav__item a:hover {
+  color: #000; /* text thoda dark ho jaye hover pe */
+}
+
+/* Hover background splash */
+.desktop-nav__item a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: url("uploads/blue-splash.png") no-repeat center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.desktop-nav__item a:hover::before {
+  opacity: 1;
+}
 		<!--===  SCRIPTS ===-->
 		<script src="assets/js/vendors/bundle-min.js"></script>
 		<script src="assets/js/script.js"></script>
